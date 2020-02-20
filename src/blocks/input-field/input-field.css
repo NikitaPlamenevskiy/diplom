@@ -1,0 +1,12 @@
+.input-field{
+    box-sizing: border-box;
+    width: 605px;
+    height: 64px;
+    border-radius: 100px;
+    font-size: 16px;
+    text-align: left 16px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}

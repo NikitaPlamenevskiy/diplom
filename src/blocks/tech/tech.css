@@ -1,0 +1,7 @@
+@import url(./__container/tech__container.css);
+
+.tech{
+  display: flex;
+  background: #F5F6F7;
+  height: 334px;
+}

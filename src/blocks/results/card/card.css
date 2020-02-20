@@ -1,0 +1,12 @@
+@import url(./__image/card__image.css);
+@import url(./__name/card__name.css);
+@import url(./__par/card__par.css);
+@import url(./__source/card__source.css);
+@import url(./__date/card__date.css);
+
+.card{
+    width: 400px;
+    height: 576px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}

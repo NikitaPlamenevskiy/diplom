@@ -1,0 +1,12 @@
+@import url(./__author/subtitle__author.css);
+@import url(./__preloader/subtitle__preloader.css);
+@import url(./__description/subtitle__description.css);
+@import url(./_tech/subtitle_tech.css);
+
+.subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}

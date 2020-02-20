@@ -1,0 +1,12 @@
+@import url(./__menu/footer__menu.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(./__img-links-container/footer__img-links-container.css);
+@import url(./img-link/img-link.css);
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    max-width: 1440px;
+}

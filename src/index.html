@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsAnalyzer</title>
+    <link href="<%=htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="main">
+    <section class="search">
+        <img src="<%=require('./images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg')%>" class="search__cover">
+        <header class="header">
+            <h2 class="header__logo">NewsAnalyzer</h2>
+            <div class="header__menu">
+                <a href="index.html" class="menu-list">Главная</a>
+                <a href="about.html" class="menu-list">О проекте</a>
+            </div>
+        </header>
+        <h1 class="search__title">Что в мире творится?</h1>
+        <p class="subtitle search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+        <form class="search-field">
+            <input class="input-field" alt="поле ввода" placeholder="Введите тему">
+            <button class="button button__search">Искать</button>
+        </form>
+        
+    </section>
+    <section class="preloader">
+       <div class="preloader__block">
+           <i class="circle-preloader"></i>
+           <p class="subtitle subtitle__preloader">Идет поиск новостей...</p>
+       </div>        
+    </section>
+    <section class="not-matched">
+        <div class="not-mathced__block">
+            <img class="not-matched__image" src="<%=require('./images/not-found_v1.png')%>" alt="ничего не найдено">
+            <h3 class="not-matched__title">Ничего не найдено</h3>
+            <p class="not-matched__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+    </section>
+    <section class="results">
+        <div class="result__text-conteiner">
+            <h2 class="title title__result">Результаты поиска</h2>
+            <a href="#" class="results__link">Посмотреть аналитику &#8250;</a>
+        </div>
+        
+        <div class="card-list">
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div>
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div>    
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div>
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div> 
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div>  
+            <div class="card">
+                <img src="<%=require('./images/image_08.png')%>" class="card__image">
+                <p class="card__date"> 2 августа, 2019</p>
+                <h2 class="card__name">Национальное достояние – парки</h2>
+                <p class="card__par">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <a href="#"  class="card__source">ЛЕНТА.РУ</a>
+            </div>  
+        </div>
+        <button class="button button__more">Показать еще</button>
+        
+    </section>
+    <section class="about-author">
+        <img class="about-author__photo" src="<%=require('./images/image-03.jpg')%>" alt="автарка"> 
+        <div class="about-authot__text-block">
+            <h3 class="title title__author">Об авторе</h3>
+            <p class="subtitle subtitle__author">Меня зовут Пламеневский Никита, являюсь студентом ФИЯ, ТГУ. Это моя дипломная работа для получения сертификата о прохождении курса "Frontend developer". </p>
+        </div>        
+    </section>
+    <footer class="footer">
+       <p class="footer__copyright">&#169; 2020. Nick Pl</p>
+        <ul class="footer__menu">
+            <li><a href="#" target="_blank" class="results__link" >Главная</a></li>
+            <li><a href="#" target="_blank" class="results__link">О проекте</a></li>
+            <li><a href="https://praktikum.yandex.ru/" target="_blank" class="results__link">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__img-links-container">
+            <a class="" href="https://github.com/NikitaPlamenevskiy" target="_blank"><img class="img-link" src="<%=require('./images/Vector.jpg')%>" alt="GitHub"> </a>
+            <a class="" href="https://www.facebook.com/nikitaplamenevski" target="_blank"><img class="img-link" src="<%=require('./images/Vector1.jpg')%>" alt="Facebook"> </a>    
+        </div>      
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

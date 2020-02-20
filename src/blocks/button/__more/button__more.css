@@ -1,0 +1,21 @@
+.button__more{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 288px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    margin-top: 64px;
+    margin-bottom: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__more:hover{
+    opacity: 0.9;
+    transition: ease 1.2s;
+}

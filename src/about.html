@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsAnalyzer</title>
+    <link href="<%=htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="main">
+    <header class="header">
+            <h2 class="header__logo_dark">NewsAnalyzer</h2>
+            <div class="header__menu">
+                <a href="index.html" class="menu-list_dark">Главная</a>
+                <a href="about.html" class="menu-list_dark">О проекте</a>
+            </div>
+    </header>
+    <h1 class="title title__clients">Клиентам</h1>
+    <p class="subtitle subtitle__description">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.<br><br> Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.<br><br> Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.<br><br> При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.<br><br> Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.<br><br></p>
+    <section class="tech">
+      <h2 class="title title_tech">Используемые технологии</h2>
+      <div class="tech__container">
+        <h4 class="subtitle subtitle_tech">HTML</h4>
+        <h4 class="subtitle subtitle_tech">CSS</h4>
+        <h4 class="subtitle subtitle_tech">Java Script</h4>
+        <h4 class="subtitle subtitle_tech">Webpack</h4>
+        <img class="tech__container__img" src="<%=require('./images/html.png')%>" alt="html"> 
+        <img class="tech__container__img" src="<%=require('./images/css.png')%>" alt="html"> 
+        <img class="tech__container__img" src="<%=require('./images/js.png')%>" alt="html"> 
+        <img class="tech__container__img" src="<%=require('./images/webpack.png')%>" alt="html"> 
+      </div>
+    </section>
+    <section class="about-author">
+        <img class="about-author__photo" src="<%=require('./images/image-03.jpg')%>" alt="автарка"> 
+        <div class="about-authot__text-block">
+            <h3 class="title title__author">Об авторе</h3>
+            <p class="subtitle subtitle__author">Меня зовут Пламеневский Никита, являюсь студентом ФИЯ, ТГУ. Это моя дипломная работа для получения сертификата о прохождении курса "Frontend developer". </p>
+        </div>        
+    </section>
+    <footer class="footer">
+       <p class="footer__copyright">&#169; 2020. Nick Pl</p>
+        <ul class="footer__menu">
+            <li><a href="#" target="_blank" class="results__link" >Главная</a></li>
+            <li><a href="#" target="_blank" class="results__link">О проекте</a></li>
+            <li><a href="https://praktikum.yandex.ru/" target="_blank" class="results__link">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__img-links-container">
+            <a class="" href="https://github.com/NikitaPlamenevskiy" target="_blank"><img class="img-link" src="<%=require('./images/Vector.jpg')%>" alt="GitHub"> </a>
+            <a class="" href="https://www.facebook.com/nikitaplamenevski" target="_blank"><img class="img-link" src="<%=require('./images/Vector1.jpg')%>" alt="Facebook"> </a>    
+        </div>      
+    </footer>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

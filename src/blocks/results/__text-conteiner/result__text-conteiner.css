@@ -1,0 +1,5 @@
+.result__text-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 297px;
+}

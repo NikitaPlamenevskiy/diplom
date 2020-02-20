@@ -1,0 +1,13 @@
+@import url(./__photo/about-author__photo.css);
+@import url(../title/__author/title__author.css);
+@import url(../subtitle/subtitle.css);
+@import url(../about-author/__text-block/about-authot__text-block.css);
+
+
+.about-author{
+    display: flex;
+    max-width: 1440px;
+    height: 624px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}

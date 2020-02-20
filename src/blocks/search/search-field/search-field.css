@@ -1,0 +1,14 @@
+@import url("/blocks/input-field/input-field.css");
+@import url("/blocks/button/__search/button__search.css");
+@import url("/blocks/button/button.css");
+
+.search-field{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 608px;
+    height: 64px;
+}
