@@ -2,6 +2,7 @@
 @import url(./__copyright/footer__copyright.css);
 @import url(./__img-links-container/footer__img-links-container.css);
 @import url(./img-link/img-link.css);
+@import url(./__link/footer__link.css);
 
 .footer{
     display: grid;

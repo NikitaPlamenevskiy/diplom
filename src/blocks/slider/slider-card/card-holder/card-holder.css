@@ -1,0 +1,13 @@
+@import url(./__image/holder__image.css);
+@import url(./__name/holder__name.css);
+@import url(./__mail/holder__mail.css);
+
+.card-holder{
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 32px 32px;
+  grid-row-gap: 2px;
+  grid-column-gap: 16px;
+  margin: 0 auto;
+  width: 352px;
+}

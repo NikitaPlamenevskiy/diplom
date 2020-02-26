@@ -1,6 +1,6 @@
 .footer__menu{
     display: grid;
-    grid-template-columns: 71px 90px 162px;
+    grid-template-columns: 71px 93px 162px;
     grid-gap: 39px;
     list-style-type:none;
     margin: 0;

@@ -1,14 +1,11 @@
-@import url(./_github/results__link_github.css);
-
-.results__link{
+.footer__link{
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #1A1B22;
     margin-top: 94px;
     cursor: pointer;
-    margin-right: 111px;
 }

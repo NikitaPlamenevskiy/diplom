@@ -1,0 +1,10 @@
+@import url(./card-holder/card-holder.css);
+@import url(./__comment/card__comment.css);
+@import url(./__date/slider-card__date.css);
+
+.slider-card{
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 400px;
+  height: 288px;
+}

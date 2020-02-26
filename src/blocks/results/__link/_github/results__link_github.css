@@ -1,6 +1,6 @@
-@import url(./_github/results__link_github.css);
-
-.results__link{
+.results__link_github{
+    width: 160px;
+    margin-top: 85px;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
@@ -8,7 +8,5 @@
     font-size: 18px;
     line-height: 24px;
     color: #1A1B22;
-    margin-top: 94px;
     cursor: pointer;
-    margin-right: 111px;
 }
