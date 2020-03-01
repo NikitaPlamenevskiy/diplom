@@ -1,5 +1,4 @@
 .result__text-conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 300px;
+    display: flex;
+    justify-content: space-between;
 }
