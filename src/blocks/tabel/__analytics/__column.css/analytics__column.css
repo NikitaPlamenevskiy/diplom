@@ -1,0 +1,25 @@
+@import url(./_mn/analytics__column_mn.css);
+@import url(./_tues/analytics__column_tues.css);
+@import url(./_wed/analytics__column_wed.css);
+@import url(./_thurs/analytics__column_thurs.css);
+@import url(./_fri/analytics__column_fri.css);
+@import url(./_sat/analytics__column_sat.css);
+@import url(./_sun/analytics__column_sun.css);
+
+.analytics__column{
+  height: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 6px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  background: #2F71E5;
+}

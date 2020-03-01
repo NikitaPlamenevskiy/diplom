@@ -1,0 +1,12 @@
+.tabel__count{
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #B6BCBF;
+  margin: 0px;
+  top: 158px;
+  left: 208px;
+}

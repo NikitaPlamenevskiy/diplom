@@ -1,0 +1,8 @@
+@import url(./__number/scale__number.css);
+
+.tabel__scale{
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 104px;
+}

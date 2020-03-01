@@ -1,0 +1,12 @@
+@import url(./__column.css/analytics__column.css);
+
+.tabel__analytics{
+  position: absolute;
+  display: grid;
+  grid-template-rows: 24px 24px 24px 24px 24px 24px 24px;
+  grid-row-gap: 56px;
+  left: 208px;
+  top: 246px;
+  width: 816px;
+  height: 504px;
+}

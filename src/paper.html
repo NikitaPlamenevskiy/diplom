@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Пламеневский Никита">
+  <meta name="description" content="Дипломная работа">
+  <title>NewsAnalyzer</title>
+  <link href="<%=htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="main">
+
+  <header class="header">
+    <h2 class="header__logo_dark">NewsAnalyzer</h2>
+    <div class="header__menu">
+      <a href="index.html" class="menu-list_dark">Главная</a>
+      <a href="about.html" class="menu-list_dark">О проекте</a>
+    </div>
+  </header>
+  <h1 class="title title_searched">Вы спросили: «Путешествия»</h1>
+  <p class="subtitle subtitle_searched">Новостей за неделю: <b>34 324</b></p>
+  <p class="subtitle subtitle_searched">Упоминаний в загаловках: <b>235</b></p>
+  <section class="tabel">
+    <h2 class="tabel__title">Аналитика по дням</h2>
+    <p class="table__date">ДАТА</p>
+    <p class="tabel__count">КОЛ-ВО УПОМИНАНИЙ</p>
+    <div class="tabel__line"></div>
+    <div class="tabel__scale">
+      <p class="scale__number">0</p>
+      <p class="scale__number">25</p>
+      <p class="scale__number">50</p>
+      <p class="scale__number">75</p>
+      <p class="scale__number">100</p>
+    </div>
+    <div class="tabel__dates">
+      <p class="dates__week-day">19, пн</p>
+      <p class="dates__week-day">20, вт</p>
+      <p class="dates__week-day">21, ср</p>
+      <p class="dates__week-day">22, чт</p>
+      <p class="dates__week-day">23, пт</p>
+      <p class="dates__week-day">24, сб</p>
+      <p class="dates__week-day">25, вс</p>
+    </div>
+    <div class="tabel__analytics">
+      <div class="analytics__column analytics__column_mn">15</div>
+      <div class="analytics__column analytics__column_tues">18</div>
+      <div class="analytics__column analytics__column_wed">11</div>
+      <div class="analytics__column analytics__column_thurs">39</div>
+      <div class="analytics__column analytics__column_fri">45</div>
+      <div class="analytics__column analytics__column_sat">73</div>
+      <div class="analytics__column analytics__column_sun">34</div>      
+    </div>
+    <div class="tabel__scale">
+      <p class="scale__number">0</p>
+      <p class="scale__number">25</p>
+      <p class="scale__number">50</p>
+      <p class="scale__number">75</p>
+      <p class="scale__number">100</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer__copyright">&#169; 2020. Nick Pl</p>
+    <ul class="footer__menu">
+      <li><a href="index.html" class="footer__link">Главная</a></li>
+      <li><a href="about.html" class="footer__link">О проекте</a></li>
+      <li><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link">Яндекс.Практикум</a></li>
+    </ul>
+    <div class="footer__img-links-container">
+      <a class="" href="https://github.com/NikitaPlamenevskiy" target="_blank"><img class="img-link" src="<%=require('./images/Vector.jpg')%>" alt="GitHub"> </a>
+      <a class="" href="https://www.facebook.com/nikitaplamenevski" target="_blank"><img class="img-link" src="<%=require('./images/Vector1.jpg')%>" alt="Facebook"> </a>
+    </div>
+  </footer>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 @import url(./__preloader/subtitle__preloader.css);
 @import url(./__description/subtitle__description.css);
 @import url(./__tech/subtitle__tech.css);
+@import url(./_searched/subtitle_searched.css);
 
 .subtitle{
     font-family: Roboto;

@@ -70,6 +70,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             favicon: './src/images/favicon.png',
+            background: './src/images/georgia.jpg',
             template: './src/index.html',
             filename: 'index.html'
         }),
@@ -78,6 +79,12 @@ module.exports = {
             favicon: './src/images/favicon.png',
             template: './src/about.html',
             filename: 'about.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            favicon: './src/images/favicon1.png',
+            template: './src/paper.html',
+            filename: 'paper.html'
         }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
