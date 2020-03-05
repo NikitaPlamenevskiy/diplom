@@ -1,4 +1,5 @@
 @import url(../button/__history/button__history.css);
+@import url(./__title/history__title.css);
 
 .history{
   position: relative;

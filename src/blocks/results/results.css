@@ -1,5 +1,5 @@
 @import url(../title/title.css);
-@import url(../title/__result/title__result.css);
+@import url(./__title/result__title.css);
 @import url(./card-list/card-list.css);
 @import url(../button/__more/button__more.css);
 @import url(./__link/results__link.css);

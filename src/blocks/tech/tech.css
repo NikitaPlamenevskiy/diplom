@@ -1,4 +1,7 @@
 @import url(./__container/tech__container.css);
+@import url(./__title/title__tech.css);
+@import url(./__subtitle/tech__subtitle.css);
+
 
 .tech{
   display: flex;

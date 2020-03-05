@@ -1,8 +1,8 @@
 @import url(./__photo/about-author__photo.css);
-@import url(../title/__author/title__author.css);
-@import url(../subtitle/subtitle.css);
+@import url(./__title/about-author__title.css);
 @import url(../about-author/__text-block/about-authot__text-block.css);
-
+@import url(../subtitle/subtitle.css);
+@import url(./__subtitle/about-author__subtitle.css);
 
 .about-author{
     display: flex;

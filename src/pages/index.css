@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+@import url(../blocks/title/title.css);
 @import url(../blocks/search/search.css);
 @import url(../blocks/input-field/input-field.css);
 @import url(../blocks/button/__search/button__search.css);
@@ -107,7 +108,7 @@
   
   /* result */
   
-  .title__result{
+  .result__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -177,7 +178,7 @@
   
   /* tech */
   
-  .title_tech{    
+  .tech__title{    
     width: 344px;
     margin: 0px;
     padding-top: 80px;
@@ -214,7 +215,7 @@
     margin-top: 48px;
   }
   
-  .title_history{
+  .history__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -404,7 +405,7 @@
   
   /* result */
   
-  .title__result{
+  .result__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -474,7 +475,7 @@
   
   /* tech */
   
-  .title_tech{    
+  .tech__title{    
     width: 344px;
     margin: 0px;
     padding-top: 80px;
@@ -511,7 +512,7 @@
     margin-top: 48px;
   }
   
-  .title_history{
+  .history__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -629,7 +630,7 @@
     margin-left: 40px;
   }
   
-  .title_tech{
+  .tech__title{
     margin-left: 40px;
   }
   
@@ -701,7 +702,7 @@
   
   /* result */
   
-  .title__result{
+  .result__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -771,7 +772,7 @@
   
   /* tech */
   
-  .title_tech{    
+  .tech__title{    
     width: 344px;
     margin: 0px;
     padding-top: 80px;
@@ -808,7 +809,7 @@
     margin-top: 48px;
   }
   
-  .title_history{
+  .history__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -929,6 +930,7 @@
     max-width: 688px;
     margin: 0 auto;
     margin-bottom: 26px;
+    margin-left: 40px;
   }
   
   .circle-preloader{
@@ -993,7 +995,7 @@
   
   /* result */
   
-  .title__result{
+  .result__title{
     max-width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -1080,11 +1082,11 @@
   
   /* tech */
   
-  .title_tech{    
+  .tech__title{    
     width: 344px;
     margin: 0px;
-    padding-top: 80px;
-    margin-left: 104px;
+    padding-top: 40px;
+    margin-left: 40px;
     margin-right: 30px;
   }
   
@@ -1098,7 +1100,7 @@
   
   .tech__container{
     margin: 0px;
-    margin-left: 40px;
+    margin-left: 150px;
     grid-column-gap: 94px;
   }
   
@@ -1131,7 +1133,7 @@
     margin-top: 48px;
   }
   
-  .title_history{
+  .history__title{
     width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -1339,7 +1341,7 @@
   
   /* result */
   
-  .title__result{
+  .result__title{
     max-width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -1442,7 +1444,7 @@
     margin-right: 40px;
   }
   
-  .title__author{
+  .about-author__title{
     margin-top: 42px;
   }
   
@@ -1455,7 +1457,7 @@
     height: 341px;
   }
   
-  .title_tech{
+  .tech__title{
     margin-left: 40px;
     margin-bottom: 40px;
     padding-top: 40px;
@@ -1476,7 +1478,7 @@
     height: 462px;
   }
   
-  .title_history{
+  .history__title{
     max-width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -1721,7 +1723,7 @@
     margin-bottom: 16px;
   }
   
-  .title__result{
+  .result__title{
     max-width: 288px;
     height: 68px;
     padding-top: 32px;
@@ -1807,14 +1809,11 @@
     width: 350px;
   }
   
-  .title__author{
+  .about-author__title{
     width: 350px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 40px;
-  }
-  
-  .subtitle__author{
   }
   
   /* tech */
@@ -1826,7 +1825,7 @@
     height: 528px;
   }
   
-  .title_tech{
+  .tech__title{
     max-width: 288px;
     height: 80px;
     margin: 0 auto;
@@ -1842,26 +1841,26 @@
     text-align: center;
   }
   
-  .subtitle__tech_1{
+  .tech__subtitle_1{
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_2{
+  .tech__subtitle_2{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_3{
+  .tech__subtitle_3{
     grid-template-columns: 120px;
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 3;
   }
   
-  .subtitle__tech_4{
+  .tech__subtitle_4{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -1900,7 +1899,7 @@
     height: 462px;
   }
   
-  .title_history{
+  .history__title{
     max-width: 336px;
     font-size: 30px;
     line-height: 34px;
@@ -2030,6 +2029,10 @@
     margin-left: 40px;
   }
   
+  .subtitle__description{
+    max-width: 480px;
+  }
+  
   
     /* history */
   
@@ -2041,7 +2044,7 @@
     margin-right: 30px;
   }
   
-  .title_history{
+  .history__title{
     max-width: 288px;
     height: 120px;  
     font-size: 30px;
@@ -2285,7 +2288,7 @@
     margin-bottom: 16px;
   }
   
-  .title__result{
+  .result__title{
     max-width: 288px;
     height: 68px;
     padding-top: 32px;
@@ -2372,14 +2375,14 @@
     width: 300px;
   }
   
-  .title__author{
+  .about-author__title{
     max-width: 288px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 40px;
   }
   
-  .subtitle__author{
+  .about-author__subtitle{
     width: 100%;
   }
   
@@ -2392,7 +2395,7 @@
     height: 528px;
   }
   
-  .title_tech{
+  .tech__title{
     max-width: 288px;
     height: 80px;
     margin: 0 auto;
@@ -2408,26 +2411,26 @@
     text-align: center;
   }
   
-  .subtitle__tech_1{
+  .tech__subtitle_1{
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_2{
+  .tech__subtitle_2{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_3{
+  .tech__subtitle_3{
     grid-template-columns: 120px;
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 3;
   }
   
-  .subtitle__tech_4{
+  .tech__subtitle_4{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -2470,7 +2473,7 @@
     height: 568px;
   }
   
-  .title_history{
+  .history__title{
     max-width: 288px;
     height: 120px;  
     font-size: 30px;
@@ -2740,7 +2743,7 @@
     margin-bottom: 16px;
   }
   
-  .title__result{
+  .result__title{
     max-width: 288px;
     height: 68px;
     padding-top: 32px;
@@ -2824,14 +2827,14 @@
     height: 360px;
   }
   
-  .title__author{
+  .about-author__title{
     max-width: 288px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 40px;
   }
   
-  .subtitle__author{
+  .about-author__subtitle{
     width: 288px;
   }
   
@@ -2844,7 +2847,7 @@
     height: 528px;
   }
   
-  .title_tech{
+  .tech__title{
     max-width: 288px;
     height: 80px;
     margin: 0 auto;
@@ -2860,26 +2863,26 @@
     text-align: center;
   }
   
-  .subtitle__tech_1{
+  .tech__subtitle_1{
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_2{
+  .tech__subtitle_2{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_3{
+  .tech__subtitle_3{
     grid-template-columns: 120px;
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 3;
   }
   
-  .subtitle__tech_4{
+  .tech__subtitle_4{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -2922,7 +2925,7 @@
     height: 568px;
   }
   
-  .title_history{
+  .history__title{
     max-width: 288px;
     height: 120px;  
     font-size: 30px;
@@ -3192,7 +3195,7 @@
     margin-bottom: 16px;
   }
   
-  .title__result{
+  .result__title{
     width: 288px;
     height: 68px;
     padding-top: 32px;
@@ -3277,14 +3280,14 @@
     height: 360px;
   }
   
-  .title__author{
+  .about-author__title{
     width: 288px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 40px;
   }
   
-  .subtitle__author{
+  .about-author__subtitle{
     width: 288px;
   }
   
@@ -3297,7 +3300,7 @@
     height: 528px;
   }
   
-  .title_tech{
+  .tech__title{
     width: 288px;
     height: 80px;
     margin: 0 auto;
@@ -3313,26 +3316,26 @@
     text-align: center;
   }
   
-  .subtitle__tech_1{
+  .tech__subtitle_1{
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_2{
+  .tech__subtitle_2{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 1;
   }
   
-  .subtitle__tech_3{
+  .tech__subtitle_3{
     grid-template-columns: 120px;
     margin: 0px;
     grid-column-start: 1;
     grid-row-start: 3;
   }
   
-  .subtitle__tech_4{
+  .tech__subtitle_4{
     margin: 0px;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -3375,7 +3378,7 @@
     height: 568px;
   }
   
-  .title_history{
+  .history__title{
     width: 288px;
     height: 120px;  
     font-size: 30px;
