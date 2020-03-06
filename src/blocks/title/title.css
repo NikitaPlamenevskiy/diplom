@@ -2,10 +2,9 @@
 @import url(./_searched/title_searched.css);
 
 .title{
-    font-family: Roboto Slab;
+    font-family: Roboto Slab, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 46px;
-    
+    line-height: 46px;  
 }

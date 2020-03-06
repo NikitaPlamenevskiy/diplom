@@ -1,7 +1,7 @@
 @import url(./_dark/header__logo_dark.css);
 
 .header__logo{
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
