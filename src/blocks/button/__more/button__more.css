@@ -16,6 +16,6 @@
 }
 
 .button__more:hover{
-    opacity: 0.9;
+    background: #E8E8E9;
     transition: ease 1.2s;
 }

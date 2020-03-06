@@ -1359,7 +1359,7 @@
   }
   
   .card-list{
-    grid-template-columns: 224px 224px 224px;
+    grid-template-columns: 224px 224px;
     grid-gap: 8px 8px;  
   }
   
