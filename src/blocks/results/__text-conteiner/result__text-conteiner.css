@@ -1,0 +1,4 @@
+.result__text-conteiner{
+    display: flex;
+    justify-content: space-between;
+}

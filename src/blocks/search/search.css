@@ -1,0 +1,15 @@
+@import url(./header/header.css);
+@import url(./__title/search__title.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./search-field/search-field.css);
+
+.search{
+    background-image: url(../../images/georgia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 1440px;
+    height: 576px;
+    margin: auto;
+}

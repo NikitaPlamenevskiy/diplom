@@ -1,0 +1,11 @@
+@import url(./__preloader/subtitle__preloader.css);
+@import url(./__description/subtitle__description.css);
+@import url(./_searched/subtitle_searched.css);
+
+.subtitle{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}

@@ -1,0 +1,12 @@
+@import url(./menu-list/_dark/menu-list_dark.css);
+@import url(./menu-list/menu-list.css);
+
+
+.header__menu{
+    position: absolute;
+    right: 100px;
+    display: grid;
+    grid-template-columns: 69px 86px;
+    grid-column-gap: 34px;
+    margin-top: 30px;
+}
