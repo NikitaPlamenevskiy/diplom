@@ -3,7 +3,7 @@ export const GITHUB_API = {
 }
 
 export const NEWS_API = {
-  baseUrl: 'http://newsapi.org/v2/everything?',
+  baseUrl: 'https://newsapi.org/v2/everything?',
   key: 'f4c0fc7a12334e0bb5f3ef5a430ddded',
   pageSize: '100'
 }
