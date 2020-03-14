@@ -5,7 +5,7 @@ const lastWeek = new Date(currentDate - weekMilliseconds);
 
 export default class Statistic{
   constructor(localStorage){
-    this.week=JSON.parse(localStorage.getItem("week"));
+    this.week=localStorage.getObj("week");
     this.count=localStorage.getItem("count");
     this.totalResults=localStorage.getItem("totalResults");
     this.word=localStorage.getItem("word");

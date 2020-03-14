@@ -1,3 +1,5 @@
+import LocalStorage from "./../modules/LocalStorage";
+
 /*данные даты*/
 const currentDate = new Date();
 const weekMilliseconds = 604800000;
@@ -5,7 +7,9 @@ const dayMilliseconds = 604800000/7;
 const lastWeek = new Date(currentDate - weekMilliseconds);
 const dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`
 const dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`
- 
+
+const localStorage=new LocalStorage();
+
 export default class SearchInput{
   constructor(api, results, cardList, card, preloader, blockNotMatched, textContainer, buttonMore){
     this.api = api;
@@ -49,7 +53,7 @@ export default class SearchInput{
               count+=((res.articles[i].title.toLowerCase()).split(searchInput.value.toLowerCase()).length-1);
             }
           }
-          localStorage.setItem("week",JSON.stringify(week));
+          localStorage.setObj("week",week);
           localStorage.setItem("count",count);
           this.cardList.renderFirstCards(res.articles, searchInput.value);
         })
