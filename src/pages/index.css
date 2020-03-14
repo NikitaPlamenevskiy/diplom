@@ -38,6 +38,18 @@
   .header{
     width: 100%;
   }
+  
+  .card__par{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden; 
+  }
+  
+  .card__source{
+    position: absolute;
+    bottom: 24px;
+  }
 }
 
 @media screen and (max-width: 1280px){
@@ -125,7 +137,7 @@
   }
   
   .card-list{
-    grid-template-columns: 224px 224px 224px 224px;
+    grid-template-columns: 224px 224px 224px;
     grid-gap: 8px 8px;  
   }
   
@@ -135,7 +147,11 @@
   }
   
   .card__image{
+    width: 100%;
     height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -158,7 +174,7 @@
     margin-bottom: 12px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     overflow: hidden; 
   }
   
@@ -168,12 +184,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
-     margin-top: 22px;
-    margin-bottom: 40px;
+    margin-top: 22px;
   }
   
   /* tech */
@@ -275,12 +289,12 @@
   
   .tabel{
     max-width: 1280px; 
-    padding-left: 100px
+    padding-left: 100px;
   }
   
   .tabel__line{
     max-width: 1100px; 
-    overflow: hidden;
+ 
   }
   
   .tabel__title{
@@ -293,9 +307,7 @@
   }
   
   .tabel__analytics{
-    max-width: 560px;
-    left: 220px;
-    overflow: hidden;
+    max-width: auto;
   }
   
   .subtitle_searched{
@@ -433,6 +445,9 @@
   
   .card__image{
     height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -465,12 +480,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
      margin-top: 22px;
-    margin-bottom: 40px;
   }
   
   /* tech */
@@ -580,11 +593,7 @@
   }
   
   
-  .tabel__analytics{
-    max-width: 560px;
-    left: 157px;
-    overflow: hidden;
-  }
+ 
   
   .subtitle_searched{
     margin-left: 40px;
@@ -719,7 +728,7 @@
   }
   
   .card-list{
-    grid-template-columns: 224px 224px 224px 224px;
+    grid-template-columns: 224px 224px 224px;
     grid-gap: 8px 8px;  
   }
   
@@ -730,6 +739,9 @@
   
   .card__image{
     height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -757,17 +769,18 @@
   }
   
   .card__source{
+    position: absolute;
+    bottom: 10px;
     width: 192px;
     height: 20px;
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
+    
   }
   
   .button__more{
      margin-top: 22px;
-    margin-bottom: 40px;
   }
   
   /* tech */
@@ -885,9 +898,9 @@
   }
   
   .tabel__analytics{
-    max-width: 560px;
-    left: 157px;
-    overflow: hidden;
+    max-width: 826px;
+    margin-left: 118px;
+    margin-right: 40px;
   }
   
   .subtitle_searched{
@@ -1022,10 +1035,6 @@
 
   }
   
-  .card__image{
-    height: 150px;
-  }
-  
   .card__date{
     margin-left: 16px;
     padding-top: 16px;
@@ -1072,12 +1081,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
      margin-top: 22px;
-    margin-bottom: 40px;
   }
   
   /* tech */
@@ -1210,11 +1217,7 @@
     margin-right: 40px;
   }
   
-  .tabel__analytics{
-    max-width: 560px;
-    left: 157px;
-    margin-right: 40px;
-  }
+
   
   .subtitle_searched{
     margin-left: 40px;
@@ -1369,9 +1372,6 @@
 
   }
   
-  .card__image{
-    height: 150px;
-  }
   
   .card__date{
     margin-left: 16px;
@@ -1414,17 +1414,17 @@
   
   
   .card__source{
+    position: absolute;
     max-width: 192px;
     height: 20px;
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
+    bottom: 16px;
   }
   
   .button__more{
      margin-top: 22px;
-    margin-bottom: 40px;
   }
   
   /* about */
@@ -1551,12 +1551,12 @@
   
   .tabel__scale{
     margin-right: 40px;
-  }
+  } 
   
   .tabel__analytics{
-    max-width: 514px;
+    max-width: 570px;
+    margin-left: 118px;
     margin-right: 40px;
-    overflow: hidden;
   }
   
   .subtitle_searched{
@@ -1748,11 +1748,6 @@
     width: 100%;
   }
   
-  .card__image{
-    width: 100%;
-    height: auto;
-  }
-  
   .card__date{
     margin-left: 16px;
     padding-top: 16px;
@@ -1779,12 +1774,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
     margin-top: 12px;
-    margin-bottom: 44px;
   }
   
   /* about */
@@ -1973,12 +1966,7 @@
   .tabel__scale{
     margin-right: 40px;
   }
-  
-  .tabel__analytics{
-    max-width: 400px;
-    margin-right: 40px;
-  }
-  
+ 
   .subtitle_searched{
     margin-left: 40px;
   }
@@ -2145,10 +2133,12 @@
   }
   
   .tabel__analytics{
-    max-width: 350px;
-    top: 128px;
-    left: 96px;
+    margin-top: 35px;
+    margin-left: 96px;
+    margin-right: 40px;
     grid-row-gap: 24px;
+    max-height: 312px;
+    max-width: 509px;
   }
   
   .subtitle_searched{
@@ -2315,8 +2305,10 @@
   }
   
   .card__image{
-    width: 100%;
-    height: auto;
+    max-height: 196px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -2347,12 +2339,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
     margin-top: 12px;
-    margin-bottom: 44px;
   }
   
   /* about */
@@ -2571,11 +2561,13 @@
     display: none;
   }
   
-  .tabel__analytics{
-    max-width: 240px;
-    top: 128px;
-    left: 96px;
+   .tabel__analytics{
+    margin-top: 35px;
+    margin-left: 96px;
+    margin-right: 40px;
     grid-row-gap: 24px;
+    max-height: 312px;
+    max-width: 275px;
   }
   
   .subtitle_searched{
@@ -2771,7 +2763,10 @@
   
   .card__image{
     width: 100%;
-    height: auto;
+    height: 196px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -2800,12 +2795,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
     margin-top: 12px;
-    margin-bottom: 44px;
   }
   
   /* about */
@@ -3024,10 +3017,13 @@
   }
   
   .tabel__analytics{
-    max-width: 240px;
-    top: 128px;
-    left: 96px;
+    max-width: 350px;
+    margin-left: 60px;
+    margin-right: 40px;
     grid-row-gap: 24px;
+    max-height: 312px;
+    max-width: 260px;
+    top: 128px;
   }
   
   .subtitle_searched{
@@ -3223,7 +3219,10 @@
   
   .card__image{
     width: 100%;
-    height: auto;
+    height: 196px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .card__date{
@@ -3252,12 +3251,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px;
-    margin-bottom: 16px;
   }
   
   .button__more{
     margin-top: 12px;
-    margin-bottom: 44px;
   }
   
   /* about */
@@ -3476,10 +3473,13 @@
   }
   
   .tabel__analytics{
-    max-width: 200px;
-    top: 128px;
-    left: 96px;
+    max-width: 350px;
+    margin-left: 60px;
+    margin-right: 40px;
     grid-row-gap: 24px;
+    max-height: 312px;
+    max-width: 208px;
+    top: 128px;
   }
   
   .subtitle_searched{

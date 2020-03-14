@@ -1,5 +1,6 @@
 .card__par{
-    font-family: Roboto, Arial, Helvetica, sans-serif;;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: black;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -8,4 +9,5 @@
     margin: 0 auto;
     margin-top: 16px;
     margin-bottom: 18px;
+
 }

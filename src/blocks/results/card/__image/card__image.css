@@ -1,16 +1,9 @@
 .card__image{
+    width: 100%;
     height: 272px;
-    background-size: cover;
+    background-color: #FFFFFF;
     background-position: center;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.card__image::after{
-    content: '';
-    display: block;
-    width: 272px;
-    background-color: rgba(0, 0, 0, .3);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
 }

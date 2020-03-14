@@ -5,8 +5,10 @@
 @import url(./__date/card__date.css);
 
 .card{
+    position: relative;
     width: 400px;
     height: 576px;
     background: #FFFFFF;
     border-radius: 16px;
+    text-decoration: none;
 }

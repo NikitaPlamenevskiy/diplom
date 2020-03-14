@@ -4,10 +4,12 @@
 @import url(../button/__more/button__more.css);
 @import url(./__link/results__link.css);
 @import url(./__text-conteiner/result__text-conteiner.css);
+@import url(./_open/results_open.css);
 
 .results{
-    
+    display: none;
     background: #F5F6F7;
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
