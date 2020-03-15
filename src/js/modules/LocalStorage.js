@@ -1,6 +1,6 @@
 export default class LocalStorage{
   constructor(){
-    this.Storage=sessionStorage;
+    this.Storage=localStorage;
   }
   getItem(name)
     {
@@ -12,10 +12,14 @@ export default class LocalStorage{
     }
   getObj(name)
     {
-      return (JSON.parse(this.Storage.getItem(name)))["0"];
+      return (JSON.parse(this.Storage.getItem(name)));
     }
   setObj(name,value)
     {
-      this.Storage.setItem(name,JSON.stringify({"0":value}));
+      this.Storage.setItem(name,JSON.stringify(value));
     }
+  clear()
+  {
+    this.Storage.clear();
+  }
 }

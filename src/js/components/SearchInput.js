@@ -1,14 +1,16 @@
 import LocalStorage from "./../modules/LocalStorage";
 
 /*данные даты*/
-const currentDate = new Date();
-const weekMilliseconds = 604800000;
-const dayMilliseconds = 604800000/7;
-const lastWeek = new Date(currentDate - weekMilliseconds);
-const dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`
-const dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`
+
+import {CURRENT_DATE} from "./../constants/constants";
+import {WEEK_MILLI_SECONDS} from "./../constants/constants"; 
+import {DAY_MILLI_SECONDS} from "./../constants/constants";
+import {LAST_WEEK} from "./../constants/constants";
+import {DATE_TO} from "./../constants/constants";
+import {DATE_FROM} from "./../constants/constants";
 
 const localStorage=new LocalStorage();
+
 
 export default class SearchInput{
   constructor(api, results, cardList, card, preloader, blockNotMatched, textContainer, buttonMore){
@@ -21,7 +23,7 @@ export default class SearchInput{
     this.buttonMore = buttonMore;
   }
   
-  submit(event, dateFrom, dateTo){
+  submit(event, DATE_FROM, DATE_TO){
     event.preventDefault();
     
     //форма поиска
@@ -35,26 +37,22 @@ export default class SearchInput{
     //скрыть ничего не найдено
     this.blockNotMatched.classList.remove('not-matched_open');
     
-    this.api.getNews(searchInput.value, dateFrom, dateTo)
+    this.api.getNews(searchInput.value, DATE_FROM, DATE_TO)
     .then(res => {
       this.preloader.classList.remove('preloader_open');
       this.results.classList.add('results_open');
       document.querySelector('.card-list').innerHTML='';
       if (res.articles.length){
-        this.api.getNews(searchInput.value, dateFrom, dateTo)
+        this.api.getNews(searchInput.value, DATE_FROM, DATE_TO)
         .then(res => {
-          localStorage.setItem("totalResults",res.totalResults);
-          localStorage.setItem("word",searchInput.value);
-          let week=[0,0,0,0,0,0,0];
-          let count=0;
-          for(let i in res.articles){
-            if(res.articles[i].description&&res.articles[i].title){
-              week[Math.round((new Date(res.articles[i].publishedAt)-lastWeek)*7/weekMilliseconds) - 1]+=((res.articles[i].description.toLowerCase()).split(searchInput.value.toLowerCase()).length-1)+((res.articles[i].title.toLowerCase()).split(searchInput.value.toLowerCase()).length-1);
-              count+=((res.articles[i].title.toLowerCase()).split(searchInput.value.toLowerCase()).length-1);
-            }
+          //получен ответ от сервера
+          localStorage.clear();
+          let dataStorage={
+            "totalResults":res.articles.length,
+            "word":searchInput.value,
+            "articles":res.articles
           }
-          localStorage.setObj("week",week);
-          localStorage.setItem("count",count);
+          localStorage.setObj("dataStorage",dataStorage);
           this.cardList.renderFirstCards(res.articles, searchInput.value);
         })
       }else{
