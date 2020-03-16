@@ -29,12 +29,12 @@ const diagram=document.querySelector('.tabel');
 
 
 /*данные даты*/
-const currentDate = new Date();
-const weekMilliseconds = 604800000;
-const dayMilliseconds = 604800000/7;
-const lastWeek = new Date(currentDate - weekMilliseconds);
-const dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`
-const dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`
+let currentDate = new Date();
+let lastWeek = new Date(currentDate - 604800000);
+let dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`
+let dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`
+
+
 
 
 const localStorage=new LocalStorage();
