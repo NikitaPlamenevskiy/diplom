@@ -17,6 +17,9 @@ export default class NewsApi {
 				return res.json();
 			}
 			return Promise.reject(`Упс, что-то пошло не так... ${res.status}`);
-		}).catch(error => alert(error));
+		}).catch(
+          (error) => {
+            return Promise.reject(`Ошибка: ${error}`);
+          });
 	}
 };

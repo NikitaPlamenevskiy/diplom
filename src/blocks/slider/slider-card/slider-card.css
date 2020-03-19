@@ -7,4 +7,22 @@
   border-radius: 16px;
   width: 400px;
   height: 288px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 336px;
+    height: 242px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .swiper-slide {
+    padding: 16px;
+    width: 100%;
+    height: 264px;
+    margin-right: 3px;
+  }
 }
