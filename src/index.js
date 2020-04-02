@@ -3,6 +3,9 @@ import NewsApi from "./js/modules/NewsApi";
 import {
     NEWS_API
 } from "./js/constants/constants";
+import {
+WEEK_MILLI_SECONDS
+} from "./js/constants/constants";
 import LocalStorage from "./js/modules/LocalStorage";
 import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
@@ -10,12 +13,14 @@ import SearchInput from "./js/components/SearchInput";
 
 
 
+/*форма поиска*/
+const searchForm = document.querySelector('.search-field');
+/*поле ввода*/
+const searchInput = document.querySelector('.input-field');
 /*кнопка поиска*/
 const buttonSearch = document.querySelector('.button__search');
 /*кнопка больше карточек*/
 const buttonMore = document.querySelector('.button__more');
-/*поле ввода*/
-const inputWord = document.querySelector('.input-field');
 /*блок прелоадер*/
 const preloader = document.querySelector('.preloader');
 /*блок результатов*/
@@ -24,15 +29,13 @@ const results = document.querySelector('.results');
 const blockNotMatched = document.querySelector('.not-mathced__block');
 
 
-const searchForm = document.forms.form;
-const searchInput = searchForm.elements.search;
 const diagram = document.querySelector('.tabel');
 
 
 
 /*данные даты*/
 const currentDate = new Date();
-const lastWeek = new Date(currentDate - 604800000);
+const lastWeek = new Date(currentDate - WEEK_MILLI_SECONDS);
 const dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`
 const dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`
 
@@ -51,10 +54,27 @@ const cardList = new NewsCardList(document.querySelector('.card-list'), card);
 
 const input = new SearchInput(api, results, cardList, card, preloader, blockNotMatched, buttonMore);
 
+function validation(){
+    if (!searchInput.value)
+        buttonSearch.disabled=true;
+    else if (searchInput.value!=searchInput.value.replace(/(\<(\/?[^>]+)>)/g,''))
+        buttonSearch.disabled=true;
+    else
+        buttonSearch.disabled=false;
+}
+
+window.addEventListener('load',()=>{
+  validation();
+});
+
 /*ивент на кнопку поиска*/
+searchInput.addEventListener('input', event => {
+  validation();
+});
+
 searchForm.addEventListener('submit', event => {
     event.preventDefault();
-    if (event.target.elements[0].value)
+    if (searchInput.value)
         input.submit(event, dateFrom, dateTo);
 });
 

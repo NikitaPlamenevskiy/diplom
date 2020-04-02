@@ -7,7 +7,7 @@ export default class CommitsCardList {
     }
     addCard(name, email, date, message, avatar_url) {
         const card = this.cardElement.create(name, email, date, message, avatar_url);
-        this.container.insertAdjacentHTML("beforeend", card);
+        this.container.insertAdjacentHTML('beforeend', card);
     }
     render() {
         this.api.getCommits()

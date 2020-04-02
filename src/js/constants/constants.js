@@ -11,3 +11,7 @@ export const NEWS_API = {
 
 export const WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 export const WEEK_MILLI_SECONDS = 604800000;
+export const ADDITIONAL_CARDS = 3;
+export const CLEAR_HTML = (el) => {
+  while (el.firstChild) el.removeChild(el.firstChild);
+}

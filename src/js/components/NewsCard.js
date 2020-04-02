@@ -4,7 +4,7 @@ export default class NewsCard {
         //Перевод даты
         this.date = publishedAt;
         this.date = new Date(this.date).toLocaleString("ru", {
-            day: "numeric",
+            day: 'numeric',
             year: 'numeric',
             month: 'long'
         });

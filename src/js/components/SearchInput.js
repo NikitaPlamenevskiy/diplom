@@ -1,6 +1,18 @@
-import LocalStorage from "./../modules/LocalStorage";
+import LocalStorage from './../modules/LocalStorage';
+
+import {
+    CLEAR_HTML
+} from "./../constants/constants";
 
 const dataStorage = new LocalStorage();
+
+/*форма поиска*/
+const searchForm = document.querySelector('.search-field');
+/*поле ввода*/
+const searchInput = document.querySelector('.input-field');
+/*кнопка поиска*/
+const buttonSearch = document.querySelector('.button__search');
+
 export default class SearchInput {
     constructor(api, results, cardList, card, preloader, blockNotMatched, textContainer, buttonMore) {
         this.api = api;
@@ -14,18 +26,15 @@ export default class SearchInput {
     }
     submit(event, dateFrom, dateTo) {
         event.preventDefault();
-        //форма поиска
-        const searchForm = document.forms.form;
-        //форма поля ввода
-        const searchInput = searchForm.elements.search;
         //прелоудер показать
         this.preloader.classList.add('preloader_open');
+        buttonSearch.disabled=true;
         //результат показать
         this.results.classList.remove('results_open');
         //скрыть ничего не найдено
         this.blockNotMatched.classList.remove('not-matched_open');
         this.api.getNews(searchInput.value, dateFrom, dateTo).then(res => {
-            if (res.status != "ok") {
+            if (res.status != 'ok') {
                 this.buttonMore.classList.add('button__more_hidden');
                 this.blockNotMatched.classList.add('not-matched_open');
                 this.results.classList.remove('results_open');
@@ -33,22 +42,23 @@ export default class SearchInput {
             }
             //получен ответ от сервера
             this.preloader.classList.remove('preloader_open');
+            buttonSearch.disabled=false;
             this.results.classList.add('results_open');
-            document.querySelector('.card-list').innerHTML = '';
+            CLEAR_HTML(document.querySelector('.card-list'));
             //получен ответ от сервера
             dataStorage.clear();
             const storage = {
-                "totalResults": res.articles.length,
-                "word": searchInput.value,
-                "articles": res.articles
+                'totalResults': res.articles.length,
+                'word': searchInput.value,
+                'articles': res.articles
             }
-            dataStorage.setObj("dataStorage", storage);
+            dataStorage.setObj('dataStorage', storage);
             this.cardList.renderFirstCards(res.articles, searchInput.value);
         }).catch(error => {
             this.preloader.classList.remove('preloader_open');
             this.blockNotMatched.classList.add('not-matched_open');
             this.results.classList.remove('results_open');
-            alert("Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз");
+            alert('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз');
         });
     }
 };
