@@ -23,3 +23,7 @@
     background: #2A65CC;
     transition: background 0.2s;
 }
+
+.button__search:disabled{  
+    background: #C0C0C0;
+}
