@@ -1,0 +1,13 @@
+@import url(./__week-day/dates__week-day.css);
+
+.tabel__dates{
+  position: absolute;
+  display: grid;
+  grid-template-rows: 24px 24px 24px 24px 24px 24px 24px;
+  grid-row-gap: 56px;
+  max-width: 104px;
+  height: 504px;
+  margin: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}

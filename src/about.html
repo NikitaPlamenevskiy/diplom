@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Пламеневский Никита">
+    <meta name="description" content="Дипломная работа">
+    <title>NewsAnalyzer</title>
+    <link href="<%=htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="main">
+
+    <header class="header">
+        <h2 class="header__logo_dark">NewsAnalyzer</h2>
+        <div class="header__menu">
+            <a href="index.html" class="menu-list_dark">Главная</a>
+            <a href="about.html" class="menu-list_dark">О проекте</a>
+        </div>
+    </header>
+
+    <h1 class="title title__clients">Клиентам</h1>
+    <p class="subtitle subtitle__description">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.
+        <br>
+        <br> Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.
+        <br>
+        <br> Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.
+        <br>
+        <br> При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
+        <br>
+        <br> Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.
+        <br>
+        <br>
+    </p>
+    <section class="tech">
+        <h2 class="title tech__title">Используемые технологии</h2>
+        <div class="tech__container">
+            <h4 class="subtitle tech__subtitle tech__subtitle_1">HTML</h4>
+            <h4 class="subtitle tech__subtitle tech__subtitle_2">CSS</h4>
+            <h4 class="subtitle tech__subtitle tech__subtitle_3">Java Script</h4>
+            <h4 class="subtitle tech__subtitle tech__subtitle_4">Webpack</h4>
+            <img class="tech__container__img img__tech_5" src="<%=require('./images/html.png')%>" alt="иконка html">
+            <img class="tech__container__img img__tech_6" src="<%=require('./images/css.png')%>" alt="иконка css">
+            <img class="tech__container__img img__tech_7" src="<%=require('./images/js.png')%>" alt="иконка js">
+            <img class="tech__container__img img__tech_8" src="<%=require('./images/webpack.png')%>" alt="иконка webpack">
+        </div>
+    </section>
+
+    <section class="about-author">
+        <img class="about-author__photo" src="<%=require('./images/image-03.jpg')%>" alt="автарка">
+        <div class="about-authot__text-block">
+            <h3 class="title about-author__title">Об авторе</h3>
+            <p class="subtitle about-author__subtitle">Меня зовут Пламеневский Никита, являюсь студентом ФИЯ, ТГУ. Это моя дипломная работа для получения сертификата о прохождении курса "Frontend developer". </p>
+        </div>
+    </section>
+
+    <section class="history">
+        <div class="result__text-conteiner">
+            <h2 class="title history__title">История коммитов из GitHub</h2>
+            <a href="https://github.com/NikitaPlamenevskiy/diplom/commits/master" class="results__link_github" target="_blank">Открыть в Github &#8250;</a>
+
+        </div>
+        <section class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <button class="button__history"><a href="https://github.com/NikitaPlamenevskiy/diplom/commits/master" class="button__history__link" target="_blank">Открыть в Github &#8250;</a></button>
+
+        </section>
+
+    </section>
+    <footer class="footer">
+        <p class="footer__copyright">&#169; 2020. Nick Pl</p>
+        <ul class="footer__menu">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="about.html" class="footer__link">О проекте</a></li>
+            <li><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__img-links-container">
+            <a class="" href="https://github.com/NikitaPlamenevskiy" target="_blank"><img class="img-link" src="<%=require('./images/Vector.jpg')%>" alt="GitHub"> </a>
+            <a class="" href="https://www.facebook.com/nikitaplamenevski" target="_blank"><img class="img-link" src="<%=require('./images/Vector1.jpg')%>" alt="Facebook"> </a>
+        </div>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

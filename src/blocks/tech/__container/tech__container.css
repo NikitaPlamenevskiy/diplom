@@ -1,0 +1,11 @@
+@import url(./__img/tech__container__img.css);
+
+.tech__container{
+  display: grid;
+  margin-top: 93px;
+  grid-row-gap: 23px;
+  grid-column-gap: 40px;
+  grid-template-rows: 30px 97px;
+  grid-template-columns: 90px 90px 90px 90px;
+  text-align: center;
+}  

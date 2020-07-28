@@ -1,0 +1,22 @@
+.navigation__link{
+  width: 100%;
+  text-decoration: none;
+  font-family: Roboto, Arial, Helvetica, sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+}
+
+.navigation__link:hover{
+    color:  #1A1B22;
+    transition: ease .3s;
+}
+
+.navigation__link::after{
+    background-color: #1A1B22;
+    content: "";
+    width: 100%;
+    transition: width .3s ease-in-out;
+}

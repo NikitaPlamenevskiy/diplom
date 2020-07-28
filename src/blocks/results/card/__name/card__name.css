@@ -1,0 +1,10 @@
+.card__name{
+    margin: 0 auto;
+    font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    max-width: 352px;
+    color: #1A1B22;
+}

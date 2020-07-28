@@ -1,0 +1,11 @@
+.subtitle__preloader{
+    display: block;
+    position: absolute;
+    top:178px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 280px;
+    color: #B6BCBF;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.menu-list_dark{
+    font-family: Roboto, Arial, Helvetica, sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    color: #B6BCBF;
+    line-height: 24px;
+    position: relative;
+   
+}
+
+.menu-list_dark:hover{
+    color:#1A1B22;
+    transition: ease .3s;
+}
+
+.menu-list_dark::after{
+    background-color: #1A1B22;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out;
+}
+
+.menu-list_dark:hover:after,
+.menu-list_dark:focus:after {
+    width: 100%;
+}
